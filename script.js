@@ -10,7 +10,7 @@ console.log(generateTarget());
 const compareGuesses =(humanguess,computerguess,targetnumber)=>{
   const computerdifference=Math.abs(targetnumber-computerguess);
   const humandifference=Math.abs(targetnumber-humanguess);
-  return humandifference <= computerdifference;
+  return humandifference == computerdifference;
 
 }
 const updateScore=winner=>{
